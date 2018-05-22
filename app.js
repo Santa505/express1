@@ -6,10 +6,6 @@ const port = process.env.PORT || 3000;
 const cohorts = require("./cohorts.json")
 app.use(morgan('tiny'));
 
-// fetch("./cohorts.json")
-//  .then(response => response.json())
-//  .then(json => console.log(json));
-
 
 
 function findById(data, id){
