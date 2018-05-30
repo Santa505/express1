@@ -29,12 +29,12 @@ app.listen(port, () => {
     app.get("/:id", function (request, response) {
         var record = findById(cohorts, request.params.id);
         if (!record){
-            response.status = 404;
+            // response.status = 404;
             response.json({
                 error: {
                     message: "No record found!"
                 }
-            });
+            }).response.status(404);
         }
     
         response.json({data: record});
