@@ -34,7 +34,7 @@ app.listen(port, () => {
                 error: {
                     message: "No record found!"
                 }
-            }).response.status(404);
+            }).status(404);
         }
     
         response.json({data: record});
