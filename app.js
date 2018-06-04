@@ -36,8 +36,8 @@ app.listen(port, () => {
             });
         } else {
     
-        response.json({data: record});
+    response.json({data: record});
   
-        }
+    }
 })
 })
